@@ -32,10 +32,8 @@ def split_barrier(A, barrier):
         else:
             middle += 1
 
-    i = 0
-    for num in left + [barrier] * middle + right:
-        A[i] = num
-        i += 1
+    for ind, num in enumerate(left + [barrier] * middle + right):
+        A[ind] = num
 
 
 # if __name__ == '__main__':
